@@ -1,0 +1,34 @@
+.Breadcrumb{
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 10;
+    top: 5rem;
+  background-color: var(--Colours-Neutral-colours-White-10);
+    padding: 2.9rem 0rem;
+    border-bottom: 1px solid #C7CDDE;
+    
+    h1{
+      font-family:"Medium";
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 1.2rem;
+      margin-bottom: 0 !important;
+      color: var( --Colours-Typography-colours-Default---800);
+    }
+    span{
+      text-decoration: none;
+      font-family:  "LargeBreadcrumb";
+      color: var(--Colours-Typography-colours-Default---500);
+      font-size: 0.875rem;
+    }
+    @media  (min-width: 1024px) and (max-width: 1440px){
+       h1 {
+        font-family: "Medium";
+        font-size: 1.7rem !important;
+        font-weight: 600;
+        margin-top: 1.2rem;
+        margin-bottom: 0 !important;
+        color: var(--Colours-Typography-colours-Default---800);
+    }
+    }
+  }

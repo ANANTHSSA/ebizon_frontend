@@ -1,0 +1,18 @@
+#summaryCard{
+    #Answer{
+        border-radius: none !important;
+        box-shadow: none !important;
+    }
+   .summary-answer{
+    font-size: 0.875rem;
+    font-family: "SemiBold";
+    color: var(--Colours-Typography-colours-Default---800);
+    margin-bottom: 0 !important;
+    margin-left: 0.4rem;
+   }
+   .summary-multiselect{
+    .summary-answer{
+        margin-bottom: 1rem !important;
+    }
+   }
+}

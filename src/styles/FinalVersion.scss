@@ -1,0 +1,56 @@
+#FinalVersion {
+  position: relative;
+  .filter{
+    position: -webkit-sticky;
+  position: sticky;
+  top: 10.9rem;
+  left: 0;
+z-index: 10;
+  }
+  .final-select-option{
+    display: flex;
+    align-items: center;
+  }
+  .form-control {
+    cursor: not-allowed;
+    border-radius: var(--box-border-radius) !important;
+    padding: 0.75rem 1.5rem 0.75rem 0.75rem !important;
+    color: var(--Colours-Typography-colours-Default---800) !important;
+    font-size: 0.875rem !important;
+    font-family: "Medium-Regular" !important;
+    margin-bottom: 3rem;
+  }
+  .cat-heading{
+    font-family: "Medium-SemiBold";
+    color: var(--Colours-Typography-colours-Default---800);
+    margin: 3rem 0;
+
+  }
+  .subcat-heading{
+    color: var(--Colours-Typography-colours-Default---500);
+    margin: 2rem 0;
+    font-family: "Medium-SemiBold";
+    
+  }
+  .version-question{
+    width: 85%;
+    margin: 0 auto;
+    background: var( --box-background-color);
+    box-shadow: var(--box-shadow-color);
+    padding: 0.5rem 3rem;
+  }
+  .question{
+    margin-bottom: 3rem;
+    color: var( --Colours-Primary-colour-Blue-700);
+    font-family: "SemiBoldQuestionNumber";
+  }
+  @media (min-width: 667px) and (max-width: 1024px) {
+    .filter{
+      top: 9.7rem;
+    }
+    .dropdown-label{
+      font-size: 0.8rem;
+    }
+    
+  }
+}

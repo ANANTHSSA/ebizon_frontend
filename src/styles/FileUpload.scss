@@ -1,0 +1,62 @@
+.fileUpload{
+    .btn{
+       
+        
+        border-radius: 0 !important;
+        color: var(--Colours-Typography-colours-Default---500) !important;
+        cursor: pointer;
+    }
+      .file-label {
+        color: var(--Colours-Typography-colours-Default---500);
+        font-weight: 400;
+        font-size: 1rem;
+        font-family: "Regular";
+      }
+      
+      input[type="file"] {
+        border-radius: 0.125rem;
+        border: 1px dashed var(--Colours-Primary-colour-Blue-100);
+        background-color: var(--Colours-Neutral-colours-White-10);
+        padding: 0.7rem;
+        font-size: 0.875rem;
+        color: var(--Colours-Typography-colours-Default---800);
+        font-family: "Regular";
+      }
+      .file-review {
+        padding: 10px;
+        border: 2px dashed var(--Colours-Primary-colour-Blue-100);
+        width: 75%;
+        background-color: white;
+      }
+      .review-box {
+          max-height: 20rem;
+          overflow-x: scroll;
+      }
+      
+      .review-box::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      .review-box::-webkit-scrollbar-thumb {
+        background-color: var(
+          --Colours-Primary-colour-Blue-500
+        ); /* Change to your desired color */
+        border-radius: 4px;
+      }
+      
+      .review-box::-webkit-scrollbar-track {
+        background-color: white;
+        border-radius: 4px;
+      }
+      span{
+          font-size: 1rem !important;
+      }
+      
+      @media (min-width:375px) and (max-width:667px) {
+          
+      input[type="file"]{
+          width: 60%;
+      }
+        }
+}
+

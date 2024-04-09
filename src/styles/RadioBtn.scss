@@ -1,0 +1,149 @@
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+
+   
+  }
+  
+  .radio-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .radio-button input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--Colours-Primary-colour-Blue-500);
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  .radio-circle::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .radio-button input[type="radio"]:checked + .radio-circle::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .radio-button:nth-of-type(1) input[type="radio"]:checked + .radio-circle::before {
+    background-color: var(--Colours-Primary-colour-Blue-500);
+  }
+  
+
+  
+  .radio-label {
+    color: var(--Colours-Typography-colours-Default---500);
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "Regular";
+  }
+  
+  .radio-button:hover .radio-circle {
+    border-color:  var(--Colours-Primary-colour-Blue-500);
+  }
+  
+  .radio-button:hover input[type="radio"]:checked + .radio-circle::before {
+    background-color: var(--Colours-Primary-colour-Blue-500);
+  }
+.radio-buttons input[type="radio"]:disabled + .radio-circle {
+  background-color: var(--Colours-Neutral-colours-Gray-100);
+  border-color: var(--Colours-Typography-colours-Disabled);
+  cursor: not-allowed;
+}
+
+
+
+// .radio-buttons {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .radio-button {
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 10px;
+//   cursor: pointer;
+// }
+
+// .radio-button input[type="radio"] {
+//   display: none;
+// }
+
+// .radio-circle {
+//   width: 20px;
+//   height: 20px;
+//   border-radius: 50%;
+//   border: 2px solid var(--Colours-Primary-colour-Blue-500);
+//   position: relative;
+//   margin-right: 10px;
+// }
+
+// .radio-circle::before {
+//   content: "";
+//   display: block;
+//   width: 12px;
+//   height: 12px;
+//   border-radius: 50%;
+//   background-color: #ddd;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%) scale(0);
+//   transition: all 0.2s ease-in-out;
+// }
+
+// .radio-button input[type="radio"]:checked + .radio-circle::before {
+//   transform: translate(-50%, -50%) scale(1);
+//   background-color: lightgray; /* Set the background color for checked radio buttons */
+// }
+
+// .radio-button input[type="radio"]:disabled + .radio-circle::before {
+//   background-color: red; /* Set the background color for disabled radio buttons */
+// }
+
+// .radio-button:not(:hover) input[type="radio"]:not(:checked) + .radio-circle::before {
+//   background-color: #ddd; /* Set the background color for unchecked radio buttons */
+// }
+
+// .radio-button:hover .radio-circle {
+//   border-color: #555;
+// }
+
+// .radio-button:hover input[type="radio"]:checked + .radio-circle::before {
+//   background-color: #555; /* Set the hover background color for checked radio buttons */
+// }
+
+// .radio-label {
+//   color: var(--Colours-Typography-colours-Default---500);
+//   font-weight: 400;
+//   font-size: 1rem;
+//   font-family: "Regular";
+// }
+
+// /* Apply background color to label when radio is disabled and unchecked */
+// .radio-button input[type="radio"]:disabled:not(:checked) + .radio-label {
+//   background-color: red;
+// }
+
+// /* Apply light gray background color to label when radio is unchecked and not hovered */
+// .radio-button input[type="radio"]:not(:checked):not(:hover) + .radio-label {
+//   background-color: #ddd;
+// }

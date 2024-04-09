@@ -1,0 +1,14 @@
+.secondery-btn{
+    border: none !important;
+    background-color: transparent;
+    text-decoration: underline;
+    color: var(--Colours-Primary-colour-Blue-500);
+    font-size: 0.875rem;
+    font-family: "Medium";
+    font-weight: 500;
+}
+.secondery-btn:disabled{
+    color: var(--Colours-Typography-colours-Disabled) !important;
+//   cursor: not-allowed;
+  border-color: var(--Colours-Typography-colours-Disabled) !important;
+}

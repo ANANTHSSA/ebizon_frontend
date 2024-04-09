@@ -1,0 +1,63 @@
+
+.custom-toast {
+  position: fixed;
+  top: 5rem;
+  left: 50%; /* Adjusted to left */
+  transform: translateX(-50%); /* Added */
+  padding: 0.75rem;
+  border-radius: var(--box-border-radius);
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1500;
+  font-size: 1rem;
+  width: fit-content;
+}
+
+
+.Success {
+  background: var(--Colours-System-colours-Success-10);
+  color: var(-Colours-System-colours-Success-700);
+  border: 1px solid var(--Colours-System-colours-Success-700);
+  padding: 0.75rem;
+ /* Green color for success */
+}
+.Unauthorized{
+  background: var(--Colours-System-colours-Alert-10);
+  color: var(--Colours-System-colours-Alert-700);
+  border:1px solid var(--Colours-System-colours-Alert-700);
+  padding: 0.75rem;
+}
+.Failure{
+  background: var(--Colours-System-colours-Alert-10);
+  color: var(--Colours-System-colours-Alert-700);
+  border:1px solid var(--Colours-System-colours-Alert-700);
+  padding: 0.75rem;
+}
+.Alert{
+  background:var(--Colours-Primary-colour-Blue-10);
+  color: var(--Colours-Primary-colour-Blue-700);
+  border: 1px solid var(--Colours-Primary-colour-Blue-700);
+  padding: 0.75rem;
+}
+.progress-bar-container{
+  height: 1.5rem;
+  .Success{
+    padding: 0.3rem !important;
+    border-radius: 1.5rem !important;
+  }
+  .Failure{
+    padding: 0.3rem !important;
+    border-radius: 1.5rem !important;
+  }
+  .Alert{
+    padding: 0.3rem !important;
+    border-radius: 1.5rem !important;
+  }
+  .Unauthorized{
+    padding: 0.3rem !important;
+    border-radius: 1.5rem !important;
+  }
+  .progress-text{
+    font-family: "Medium-SemiBold";
+  }
+}
+

@@ -1,0 +1,15 @@
+.upload-file-name{
+    font-size: 0.875rem;
+    color: var(--Colours-System-colours-Success-500);
+    margin-bottom: 0 !important;
+    font-family: "Large";
+}
+.upload-close-btn{
+    width: 42% !important;
+}
+@media (min-width: 375px) and (max-width: 667px) {
+    .upload-close-btn{
+        width: 90% !important;
+    }
+    
+}

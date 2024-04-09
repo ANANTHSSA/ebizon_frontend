@@ -1,0 +1,22 @@
+.primary-btn{
+    background-color: var(--Colours-Primary-colour-Blue-500);
+    color: var(--Colours-Neutral-colours-White-10);
+    font-family: "LargeBtn";
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.125rem;
+    border: none;
+}
+.primary-btn:disabled{
+    background-color: var(--Colours-Neutral-colours-Gray-100) !important;
+  cursor: not-allowed;
+  color: var(--Colours-Typography-colours-Disabled) !important;
+  border-color: var(--Colours-Typography-colours-Disabled) !important;
+}
+@media (min-width: 375px) and (max-width: 667px) {
+    .primary-btn{
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+    
+}

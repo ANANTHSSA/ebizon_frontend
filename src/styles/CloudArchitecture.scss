@@ -1,0 +1,32 @@
+#CloudArchitecture {
+  position: relative;
+  .filter {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 12.2rem;
+    left: 0;
+    z-index: 10;
+  }
+//   overflow-y: auto;
+  // height: 30rem;
+  .selected-option {
+    width: 12rem !important;
+    outline: none;
+  }
+  .preview {
+    height: 15rem;
+    font-size: 10rem;
+  }
+  .options1{
+    position: absolute;
+    border: 1px solid var(--Colours-Primary-colour-Blue-100);
+    border-top: none;
+    max-height: 30vh;
+    overflow-y: auto;
+    background: var(--Colours-Neutral-colours-White-10);
+    width: 12rem;
+    border-radius: 0rem 0rem 0.75rem 0.75rem;
+    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+  }
+}

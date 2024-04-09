@@ -1,0 +1,164 @@
+#settings {
+  .filter {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10.5rem;
+    left: 0;
+    z-index: 10;
+  }
+
+  h5 {
+    font-family: "Medium-Regular";
+    color: var(--Colours-Typography-colours-Default---800);
+  }
+  .primary-btn {
+    padding: 0.55rem 1.5rem;
+  }
+  .nav-link {
+    background-color: var(--Colours-Primary-colour-Blue-10);
+    color: var(--Colours-Typography-colours-Default---500);
+    font-size: 1rem;
+    font-family: "Medium-Regular";
+    margin-right: 0.5rem;
+    border-top-right-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+  }
+
+  .active {
+    background-color: var(--Colours-Typography-colours-Default---500);
+    color: var(--Colours-Neutral-colours-White-10) !important;
+    border-top-right-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+  }
+  .setting-heading {
+    font-size: 1.3rem;
+    font-family: "Medium-Regular";
+    color: var(--Colours-Typography-colours-Default---800);
+    padding: 1.3rem 0;
+  }
+  .table-heading th {
+    font-size: 1.2rem;
+    color: var(--Colours-Typography-colours-Default---800);
+    font-family: "Medium-SemiBold";
+    padding: 1.4rem 0rem;
+  }
+  tbody td {
+    font-size: 1.1rem;
+    color: var(--Colours-Primary-colour-Blue-700);
+    font-family: "Medium";
+    font-weight: 400;
+    padding: 1.4rem 0rem;
+
+    span {
+      display: block;
+    }
+  }
+  td {
+    vertical-align: middle;
+  }
+  .inputsearch {
+    padding: 0 1rem;
+
+    border: 1px solid #dee2e6;
+    border-radius: 25px;
+    outline: none;
+    background-color: var(--Colours-Primary-colour-Blue-10);
+    color: #0d0c22;
+    transition: 0.3s ease;
+  }
+
+  .inputsearch::placeholder {
+    color: var(--Colours-Typography-colours-Default---500);
+    font-size: 1rem;
+    font-family: "Medium-Regular";
+    margin-right: 0.5rem;
+  }
+
+  .inputsearch:focus,
+  inputsearch:hover {
+    outline: none;
+    border-color: var(--Colours-Primary-colour-Blue-10);
+    background-color: var(--Colours-Primary-colour-Blue-10);
+    border-radius: 25px;
+  }
+  .popover1 {
+    position: relative;
+  }
+  .popover-content {
+    position: absolute;
+    top: -0rem;
+    left: -8.5rem;
+    background-color: var(--Colours-Primary-colour-Blue-10);
+    padding: 0 2rem;
+    border-radius: var(--box-border-radius);
+    z-index: 1;
+    .popover-cont {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      color: var(--Colours-Typography-colours-Default---800);
+    }
+  }
+  .user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .user-profile-container {
+    width: 50rem;
+    background: var(--box-background-color);
+    border-radius: var(--box-border-radius);
+    box-shadow: var(--box-shadow-color);
+    padding: 0.5rem 2rem 1rem 2rem;
+  }
+  .user-profile-container:hover {
+    background: var(--box-hover-color);
+  }
+  .form-control:focus {
+    box-shadow: none !important;
+    border: 1px solid var(--Colours-Primary-colour-Blue-100) !important;
+    border-radius: var(--box-border-radius) !important;
+  }
+  .form-control-lg {
+    border-radius: var(--box-border-radius) !important;
+    padding: 0.75rem 1.5rem 0.75rem 0.75rem !important;
+    color: var(--Colours-Typography-colours-Default---800) !important;
+    font-size: 0.875rem !important;
+    font-family: "Medium-Regular" !important;
+  }
+  .table-background{
+    background-color: var(--Colours-Primary-colour-Blue-10) !important;
+  }
+
+  @media (min-width: 375px) and (max-width: 667px) {
+    .filter {
+      top: 0 !important;
+      left: 0;
+    }
+    .nav-link {
+      margin-left: 0.1rem !important;
+    }
+    input[type="search"] {
+      margin-right: 0.1rem !important;
+    }
+    tbody td {
+      font-size: 0.7rem;
+    }
+    .access-item {
+      font-size: 0.7rem;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .nav-link {
+      margin-left: 0.1rem !important;
+    }
+    input[type="search"] {
+      margin-left: 0.1rem !important;
+    }
+    tbody td {
+      font-size: 0.9rem;
+    }
+    .access-item {
+      font-size: 0.9rem;
+    }
+  }
+}

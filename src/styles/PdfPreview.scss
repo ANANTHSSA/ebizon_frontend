@@ -1,0 +1,18 @@
+#PdfPreview {
+    .full-width-document {
+        padding: 5rem; /* Adding padding to the document */
+    }
+
+    .react-pdf__Page__canvas {
+        display: inline; /* Ensuring the canvas is displayed inline */
+    }
+
+    .react-pdf__Page__textContent {
+        display: none; /* Hiding the text content of the pages */
+    }
+}
+
+.pdf-preview-container {
+    width: fit-content; /* Adjust the width to fit the content */
+    margin: 0 auto; /* Center the container horizontally */
+}

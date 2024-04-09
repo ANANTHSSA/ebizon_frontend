@@ -1,0 +1,26 @@
+.custom-textarea {
+  border-radius: 0.125rem;
+  border: 1px solid var(--Colours-Primary-colour-Blue-100);
+  background-color: var(--Colours-Neutral-colours-White-10);
+  padding: 0.7rem;
+  font-size: 0.875rem;
+  color: var(--Colours-Typography-colours-Default---800);
+  font-family: "Regular";
+}
+.custom-textarea:disabled {
+  /* Add styles for the disabled state here */
+  background-color: var(--Colours-Neutral-colours-Gray-100);
+  cursor: not-allowed;
+  border-color: var(--Colours-Typography-colours-Disabled);
+  /* Example: change background color to gray for the disabled state */
+}
+@media (min-width: 375px) and (max-width: 667px) {
+  .custom-textarea {
+    width: 90% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .custom-textarea {
+    width: 82% !important;
+  }
+}
